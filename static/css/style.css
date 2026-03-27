@@ -69,8 +69,9 @@ margin:4px 0;
 
 /* HERO */
 .hero{
-height:85vh;
+height:65vh;
 background:url('/img/hero/hero.jpg') center/cover no-repeat;
+background-position: center 60%;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -83,6 +84,8 @@ position:relative;
 content:"";
 position:absolute;
 inset:0;
+z-index:1;
+pointer-events:none;
 background:linear-gradient(
 rgba(0,0,0,0.6),
 rgba(0,0,0,0.3)
@@ -90,9 +93,13 @@ rgba(0,0,0,0.3)
 }
 
 .hero-content{
+max-width:600px;
 position:relative;
-max-width:700px;
-padding:20px;
+z-index:2;
+margin:auto;
+background:rgba(0,0,0,0.35);
+padding:25px;
+border-radius:10px;
 }
 
 .hero h1{
@@ -120,7 +127,7 @@ padding:20px;
 }
 
 .hero h1{
-font-size:2rem;
+font-size:2.6rem;
 }
 
 .hero p{
@@ -128,6 +135,201 @@ font-size:1rem;
 }
 
 }
+
+/* CAMERE */
+
+.camere{
+    background:white;
+    }
+    
+    .camere-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+    margin-top:30px;
+    }
+    
+    .camera-card{
+    background:#fafafa;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:transform 0.2s;
+    }
+    
+    .camera-card:hover{
+    transform:translateY(-5px);
+    }
+    
+    .camera-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    }
+    
+    .camera-card h3{
+    padding:15px 15px 5px;
+    font-size:1.2rem;
+    }
+    
+    .camera-card p{
+    padding:0 15px 15px;
+    font-size:0.95rem;
+    }
+
+    @media (max-width:768px){
+
+        .camere-grid{
+        grid-template-columns:1fr;
+        }
+        
+        .camera-card img{
+        height:220px;
+        }
+        
+        }
+
+/* RISTORANTE */
+
+.ristorante{
+    background:#f5f1e8;
+    }
+    
+    .ristorante-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+    }
+    
+    .ristorante-text h2{
+    margin-bottom:20px;
+    }
+    
+    .ristorante-text p{
+    margin-bottom:15px;
+    }
+    
+    .ristorante-image img{
+    width:100%;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width:768px){
+
+        .ristorante-layout{
+        grid-template-columns:1fr;
+        }
+        
+        }
+
+/* EVENTI */
+
+.eventi{
+    background:url('/img/eventi/sala-eventi.webp') center/cover no-repeat;
+    position:relative;
+    }
+    
+    .eventi-overlay{
+    background:rgba(0,0,0,0.6);
+    padding:80px 0;
+    }
+    
+    .eventi-content{
+    text-align:center;
+    color:white;
+    max-width:700px;
+    }
+    
+    .eventi h2{
+    margin-bottom:20px;
+    }
+    
+    .eventi p{
+    margin-bottom:25px;
+    }
+
+    @media (max-width:768px){
+
+        .eventi-overlay{
+        padding:60px 20px;
+        }
+        
+        }
+        
+/* TERRITORIO */
+
+.territorio{
+    background:white;
+    }
+    
+    .territorio-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+    }
+    
+    .territorio-image img{
+    width:100%;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    }
+    
+    .territorio-text h2{
+    margin-bottom:20px;
+    }
+    
+    .territorio-text p{
+    margin-bottom:15px;
+    }
+
+    @media (max-width:768px){
+
+        .territorio-layout{
+        grid-template-columns:1fr;
+        }
+        
+        }
+
+/* CONTATTI */
+
+.cta-final{
+    background:#3a5f3a;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+    }
+    
+    .cta-content{
+    max-width:700px;
+    margin:auto;
+    }
+    
+    .cta-final h2{
+    margin-bottom:20px;
+    font-size:2rem;
+    }
+    
+    .cta-final p{
+    margin-bottom:25px;
+    }
+    
+    .cta-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    }
+
+    @media (max-width:768px){
+
+        .cta-final{
+        padding:60px 20px;
+        }
+        
+        }    
 
 /* FOOTER */
 .site-footer{
