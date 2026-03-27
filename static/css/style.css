@@ -69,26 +69,64 @@ margin:4px 0;
 
 /* HERO */
 .hero{
-height:75vh;
+height:85vh;
+background:url('/img/hero/hero.jpg') center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 color:white;
 position:relative;
-background:#000;
 }
 
 .hero::before{
 content:"";
 position:absolute;
 inset:0;
-background:rgba(0,0,0,0.4);
+background:linear-gradient(
+rgba(0,0,0,0.6),
+rgba(0,0,0,0.3)
+);
 }
 
 .hero-content{
 position:relative;
-max-width:600px;
+max-width:700px;
+padding:20px;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1.2rem;
+margin-bottom:25px;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+@media (max-width:768px){
+
+.hero{
+height:70vh;
+padding:20px;
+}
+
+.hero h1{
+font-size:2rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
 }
 
 /* FOOTER */
