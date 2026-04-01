@@ -19,11 +19,12 @@
 {{ block "main" . }}{{ end }}
 </main>
 
-<footer class="site-footer">
-<p>© {{ now.Year }} Hotel Moderno Demonte</p>
-</footer>
+{{ partial "footer.html" . }}
+
+<button id="backToTop">⬆️</button>
 
 <script src="/js/menu.js"></script>
+<script src="/js/main.js" defer></script>
 
 </body>
 </html>
