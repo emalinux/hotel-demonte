@@ -5,12 +5,23 @@
   box-sizing: border-box;
 }
 
+:root{
+  --primary:#c79a2b;   /* giallo oro */
+  --primary-dark:#a67c1f;
+  --text:#2b2b2b;
+  --muted:#777;
+}
+
 /* BASE */
 body {
-  font-family: system-ui, sans-serif;
+  font-family:'Inter', sans-serif;
   background: #f5f1e8;
-  color: #2e2e2e;
+  color:var(--text);
   line-height: 1.6;
+}
+
+h1,h2,h3{
+  font-family:'Lora', serif;
 }
 
 .container {
@@ -48,7 +59,7 @@ body {
 }
 
 .phone-btn {
-  background: #7a5c3e;
+  background: var(--primary);
   color: white;
   padding: 10px 16px;
   border-radius: 6px;
@@ -340,7 +351,7 @@ body {
 }
 
 .btn-primary {
-  background: #7b5e3b; /* marrone caldo */
+  background: var(--primary); /* marrone caldo */
   color: white;
   padding: 12px 22px;
   border-radius: 6px;
@@ -348,8 +359,8 @@ body {
 }
 
 .btn-secondary {
-  border: 1px solid #7b5e3b;
-  color: #7b5e3b;
+  border: 1px solid var(--primary);
+  color: var(--primary);
   padding: 12px 22px;
   border-radius: 6px;
   text-decoration: none;
@@ -360,7 +371,7 @@ body {
 }
 
 .btn-secondary:hover {
-  background: #7b5e3b;
+  background: var(--primary);
   color: white;
 }
 
@@ -397,7 +408,7 @@ body {
 }
 
 .footer a {
-  color: #c89b6d;
+  color: var(--primary);
   text-decoration: none;
 }
 
@@ -421,9 +432,8 @@ body {
 
 /* INTRO */
 
-.intro {
-  padding: 80px 20px;
-  background: #f7f3ee;
+.intro{
+  padding:80px 20px;
 }
 
 .intro-grid {
@@ -433,6 +443,10 @@ body {
   align-items: center;
   max-width: 1100px;
   margin: auto;
+}
+
+.intro-text{
+  max-width:500px;
 }
 
 .intro-text h2 {
@@ -459,10 +473,6 @@ body {
   .intro-grid {
     grid-template-columns: 1fr;
   }
-
-  .intro {
-    padding: 50px 20px;
-  }
 }
 
 /* TORNA SU */
@@ -472,7 +482,7 @@ body {
   bottom: 25px;
   right: 25px;
 
-  background: #7b5e3b;
+  background: var(--primary);
   color: white;
 
   border: none;
@@ -492,65 +502,115 @@ body {
 }
 
 #backToTop:hover {
-  background: #5f472c;
+  background: #60480d;;
   transform: translateY(-2px);
 }
 
 /* PAGINA CAMERE */
 
-.camere {
-  padding: 80px 20px;
+.camere-page .camera-detail{
+  display:flex;
+  align-items:center;
+  gap:50px;
+  margin:90px 0;
 }
 
-.camere .intro {
-  max-width: 600px;
-  margin-bottom: 40px;
+.camere-page .camera-image{
+  position:relative;
+  width:50%;
 }
 
-.camere-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+.camere-page .camera-image img{
+  width:100%;
+  border-radius:16px;
+  box-shadow:0 25px 60px rgba(0,0,0,0.18);
+  transition:all 0.3s ease;
 }
 
-.camera-card {
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+.camere-page .camera-image img:hover{
+  transform:scale(1.03);
 }
 
-.camera-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
+.camere-page .camera-text{
+  width:50%;
 }
 
-.camera-content {
-  padding: 20px;
+.camere-page .camera-text h2{
+  font-size:1.6rem;
+  margin-bottom:15px;
 }
 
-.camera-content h2 {
-  margin-bottom: 10px;
+.camere-page .camera-desc{
+  margin-bottom:15px;
+  font-size:1.05rem;
+  color:#444;
+  line-height:1.6;
 }
 
-.camera-content ul {
-  margin: 15px 0;
-  padding-left: 0;
-  list-style: none;
+/* LISTA */
+.camere-page .camera-features{
+  list-style:none;
+  padding:0;
+  margin-bottom:20px;
 }
 
-.camera-content li {
-  margin-bottom: 5px;
+.camere-page .camera-features li{
+  margin-bottom:8px;
+  color:#555;
 }
 
-.camera-content .btn {
-  display: inline-block;
-  margin-top: 10px;
+/* BUTTON */
+.camere-page .btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:12px 22px;
+  background:var(--primary);
+  color:#fff;
+  border-radius:8px;
+  text-decoration:none;
+  transition:all 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .camere-grid {
-    grid-template-columns: 1fr;
+.camere-page .btn:hover{
+  background:var(--primary-dark);
+}
+
+/* REVERSE */
+.camere-page .camera-detail.reverse{
+  flex-direction:row-reverse;
+}
+
+/* BADGE */
+.camere-page .badge{
+  position:absolute;
+  top:15px;
+  left:15px;
+  background:#c79a2b;
+  color:#fff;
+  font-size:0.8rem;
+  padding:6px 12px;
+  border-radius:6px;
+  font-weight:600;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .camere-page .camera-detail{
+    flex-direction:column;
+    text-align:center;
+    border-bottom:1px solid rgba(0,0,0,0.08);
+    padding-bottom:60px;
+    margin-bottom:60px;
   }
+
+  .camere-page .camera-detail.reverse{
+    flex-direction:column;
+  }
+
+  .camere-page .camera-image,
+  .camere-page .camera-text{
+    width:100%;
+  }
+
 }
