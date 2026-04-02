@@ -5,27 +5,54 @@ draft: false
 
 ## 📞 Contattaci
 
-Per informazioni, disponibilità e prenotazioni:
+<p class="contatti-intro">
+Siamo a disposizione per informazioni, disponibilità e prenotazioni.
+Rispondiamo rapidamente a ogni richiesta.
+</p>
 
 ---
 
-**📍 Indirizzo**  
-[Largo Mistral 7, 12014 Demonte (CN)](https://www.google.com/maps?q=Largo+Mistral+7,+Demonte)
+<div class="contatti-grid">
 
-**📞 Telefono**  
-[+39 338 246 4353](tel:+39 338 246 4353)
+  <div class="contatti-info">
 
-**📧 Email**  
-info@hoteldemonte.com
+### 📍 Dove siamo
+Largo Mistral 7  
+12014 Demonte (CN)
+
+### 📞 Telefono
+<a href="tel:+393382464353">+39 338 246 4353</a>
+
+### ✉️ Email
+<a href="mailto:info@hoteldemonte.com">info@hoteldemonte.com</a>
+
+### 🕒 Orari
+Tutti i giorni  
+8:00 – 22:00
+
+  </div>
+
+<div class="contatti-actions">
+
+  <a href="tel:+393382464353" class="btn">
+    📞 Chiama ora
+  </a>
+
+  <a href="mailto:info@hoteldemonte.com" class="btn secondary">
+    ✉️ Invia email
+  </a>
+
+</div>
+
+  </div>
+
+</div>
 
 ---
 
-## 📌 Come raggiungerci
+## 🗺️ Come raggiungerci
 
-L’Hotel Moderno si trova nel centro di Demonte,
-nel cuore della Valle Stura, facilmente raggiungibile
-in auto.
-
+<div class="mappa">
 <iframe 
 src="https://www.google.com/maps?q=Largo+Mistral+7,+Demonte&output=embed"
 width="100%" 
@@ -33,3 +60,4 @@ height="300"
 style="border:0;"
 loading="lazy">
 </iframe>
+</div>

@@ -3,7 +3,7 @@ title: "Camere"
 draft: false
 ---
 
-## 🛏️ Le nostre camere
+## 🛏️  Le nostre camere
 
 <p class="top-note">
   Scegli la soluzione più adatta al tuo soggiorno
@@ -15,7 +15,7 @@ in Valle Stura.
 
 ---
 
-## 👤 Camera Singola
+## 👤 Singola
 
 <div class="camera-detail">
 
@@ -24,7 +24,7 @@ in Valle Stura.
   </div>
 
   <div class="camera-text">
-    <h2>Camera Singola</h2>
+    
 
    <p class="camera-desc">
       Ideale per chi viaggia da solo e cerca tranquillità e semplicità.
@@ -53,7 +53,7 @@ in Valle Stura.
   </div>
 
   <div class="camera-text">
-    <h2>Camera Doppia</h2>
+    
 
    <p class="camera-desc">
       Perfetta per coppie che cercano relax e tranquillità in montagna.
@@ -82,7 +82,7 @@ in Valle Stura.
   </div>
 
   <div class="camera-text">
-    <h2>Camera Familiare</h2>
+    
 
    <p class="camera-desc">
       Spazio, comfort e libertà per famiglie o piccoli gruppi.

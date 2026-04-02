@@ -6,3 +6,6 @@ title = 'My New Hugo Site'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[params]
+  description = "Hotel accogliente nel cuore della Valle Stura. Camere confortevoli, ristorante tipico e relax in montagna."      
