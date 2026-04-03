@@ -1,6 +1,19 @@
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'it-IT'
+title = 'Hotel Moderno Demonte'
+
+defaultContentLanguage = "it"
+defaultContentLanguageInSubdir = true
+
+[languages.it]
+languageName = "Italiano"
+weight = 1
+contentDir = "content/it"
+
+[languages.en]
+languageName = "English"
+weight = 2
+contentDir = "content/en"
 
 [markup]
   [markup.goldmark]
@@ -8,4 +21,4 @@ title = 'My New Hugo Site'
       unsafe = true
 
 [params]
-  description = "Hotel accogliente nel cuore della Valle Stura. Camere confortevoli, ristorante tipico e relax in montagna."      
+  description = "Hotel accogliente a Demonte nel cuore della Valle Stura provincia di Cuneo. Camere confortevoli, ristorante tipico e relax in montagna."   
