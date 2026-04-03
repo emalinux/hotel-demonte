@@ -8,12 +8,17 @@
     </div>
 
     <nav class="nav">
-      <a href="/">Home</a>
-      <a href="/camere/">Camere</a>
-      <a href="/ristorante/">Ristorante</a>
-      <a href="/eventi/">Eventi</a>
-      <a href="/valle-stura/">Valle Stura</a>
-      <a href="/contatti/">Contatti</a>
+      <a href="/" class="{{ if eq .RelPermalink "/" }}active{{ end }}">Home</a>
+
+      <a href="/camere/" class="{{ if hasPrefix .RelPermalink "/camere" }}active{{ end }}">Camere</a>
+
+      <a href="/ristorante/" class="{{ if hasPrefix .RelPermalink "/ristorante" }}active{{ end }}">Ristorante</a>
+
+      <a href="/eventi/" class="{{ if hasPrefix .RelPermalink "/eventi" }}active{{ end }}">Eventi</a>
+
+      <a href="/valle-stura/" class="{{ if hasPrefix .RelPermalink "/valle-stura" }}active{{ end }}">Valle Stura</a>
+
+      <a href="/contatti/" class="{{ if hasPrefix .RelPermalink "/contatti" }}active{{ end }}">Contatti</a>
       <a class="camping-link"
         href="https://campingpiscinademonte.com/"
         target="_blank">
