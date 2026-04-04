@@ -1,6 +1,7 @@
 ---
 title: "Ristorante"
 draft: false
+pageClass: "ristorante-page"
 ---
 
 ## 🍽️ Il ristorante

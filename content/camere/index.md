@@ -1,6 +1,7 @@
 ---
 title: "Camere"
 draft: false
+pageClass: "camere-page"
 ---
 
 ## 🛏️  Le nostre camere

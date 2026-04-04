@@ -1,19 +1,102 @@
-baseURL = 'https://example.org/'
+baseURL = "/"
 languageCode = 'it-IT'
 title = 'Hotel Moderno Demonte'
 
 defaultContentLanguage = "it"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
 [languages.it]
 languageName = "Italiano"
 weight = 1
-contentDir = "content/it"
 
 [languages.en]
 languageName = "English"
 weight = 2
 contentDir = "content/en"
+
+[languages.it.menu]
+
+[[languages.it.menu.main]]
+name = "Home"
+url = "/it/"
+weight = 1
+
+[[languages.it.menu.main]]
+name = "Camere"
+url = "/camere/"
+weight = 2
+
+[[languages.it.menu.main]]
+name = "Ristorante"
+url = "/ristorante/"
+weight = 3
+
+[[languages.it.menu.main]]
+name = "Eventi"
+url = "/eventi/"
+weight = 4
+
+[[languages.it.menu.main]]
+name = "Valle Stura"
+url = "/valle-stura/"
+weight = 5
+
+[[languages.it.menu.main]]
+name = "Contatti"
+url = "/contatti/"
+weight = 6
+
+[[languages.it.menu.main]]
+name = "Galleria"
+url = "/galleria/"
+weight = 7
+
+[[languages.it.menu.main]]
+name = "Tariffe & Regolamento"
+url = "/tariffe/"
+weight = 8
+
+[languages.en.menu]
+
+[[languages.en.menu.main]]
+name = "Home"
+url = "/en/"
+weight = 1
+
+[[languages.en.menu.main]]
+name = "Rooms"
+url = "/en/rooms/"
+weight = 2
+
+[[languages.en.menu.main]]
+name = "Restaurant"
+url = "/en/restaurant/"
+weight = 3
+
+[[languages.en.menu.main]]
+name = "Events"
+url = "/en/events/"
+weight = 4
+
+[[languages.en.menu.main]]
+name = "Valley"
+url = "/en/valley/"
+weight = 5
+
+[[languages.en.menu.main]]
+name = "Contacts"
+url = "/en/contacts/"
+weight = 6
+
+[[languages.en.menu.main]]
+name = "Gallery"
+url = "/en/galleria/"
+weight = 7
+
+[[languages.en.menu.main]]
+name = "Rates & Policies"
+url = "/en/rates/"
+weight = 8
 
 [markup]
   [markup.goldmark]

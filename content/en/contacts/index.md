@@ -1,14 +1,14 @@
 ---
-title: "Contatti"
+title: "Contact"
 draft: false
 pageClass: "contatti-page"
 ---
 
-## Parla con noi!
+## Get in touch
 
 <p class="contatti-intro">
-Siamo a disposizione per informazioni, disponibilità e prenotazioni.
-Rispondiamo rapidamente a ogni richiesta.
+We are available for information, availability and reservations.
+We respond quickly to every request.
 </p>
 
 ---
@@ -17,35 +17,32 @@ Rispondiamo rapidamente a ogni richiesta.
 
   <div class="contatti-info">
 
-### 📍 Dove siamo
+### 📍 Location
 Largo Mistral 7  
-12014 - Demonte (CN)
+12014 Demonte (CN) – Italy
 
-### 📞 Telefono
+### 📞 Phone
 <a href="tel:+393382464353">+39 338 246 4353</a>
 
 ### ✉️ Email
 <a href="mailto:info@hoteldemonte.com">info@hoteldemonte.com</a>
 
-### 🕒 Orari
-Tutti i giorni  
-8:00 – 22:00
+### 🕒 Opening hours
+Every day  
+8:00 AM – 10:00 PM
 
 </div>
 
   <div class="contatti-actions">
-      <a href="tel:+393382464353" class="btn">📞 Chiama ora</a>
-      <a href="mailto:info@hoteldemonte.com" class="btn secondary">✉️ Invia email</a>
+      <a href="tel:+393382464353" class="btn">📞 Call now</a>
+      <a href="mailto:info@hoteldemonte.com" class="btn secondary">✉️ Send email</a>
     </div>
-
-
-   </div>
 
 </div>
 
 ---
 
-## 🗺️ Come raggiungerci
+## 🗺️ How to reach us
 
 <div class="mappa">
 <iframe 

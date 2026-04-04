@@ -1,32 +1,61 @@
 <header class="site-header">
-  <div class="container header-inner">
 
-    <div class="logo">
-      <a href="/">
-        <img src="/img/logg.png" alt="Hotel Moderno Demonte">
-      </a>
-    </div>
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-inner">
 
-    <nav class="nav">
-      <a href="/" class="{{ if eq .RelPermalink "/" }}active{{ end }}">Home</a>
+   <div class="top-left"></div>
 
-      <a href="/camere/" class="{{ if hasPrefix .RelPermalink "/camere" }}active{{ end }}">Camere</a>
-
-      <a href="/ristorante/" class="{{ if hasPrefix .RelPermalink "/ristorante" }}active{{ end }}">Ristorante</a>
-
-      <a href="/eventi/" class="{{ if hasPrefix .RelPermalink "/eventi" }}active{{ end }}">Eventi</a>
-
-      <a href="/valle-stura/" class="{{ if hasPrefix .RelPermalink "/valle-stura" }}active{{ end }}">Valle Stura</a>
-
-      <a href="/contatti/" class="{{ if hasPrefix .RelPermalink "/contatti" }}active{{ end }}">Contatti</a>
-      <a class="camping-link"
-        href="https://campingpiscinademonte.com/"
-        target="_blank">
-        Camping Piscina 🏕
-      </a>
-    </nav>
-
-    <a href="tel:+393382464353" class="btn header-cta">📞 Chiama</a>
-
+   <div class="top-center">
+    <a href="https://campingpiscinademonte.com/" target="_blank" class="camping-link">
+      🏕 Scopri anche il nostro Camping Piscina a Demonte!
+    </a>
   </div>
+
+
+      <div class="top-right">
+
+        <div class="lang-switch">
+          {{ range .AllTranslations }}
+            <a href="{{ .RelPermalink }}">
+              {{ if eq .Lang "it" }}🇮🇹{{ end }}
+              {{ if eq .Lang "en" }}🇬🇧{{ end }}
+            </a>
+          {{ end }}
+        </div>
+
+        <a href="tel:+393382464353" class="btn top-cta">
+          📞 Prenota
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- MAIN NAV -->
+  <div class="main-nav">
+    <div class="container header-flex">
+
+      <!-- LOGO -->
+      <div class="logo">
+        <a href="/">
+          <img src="/img/logg.png" alt="Hotel Moderno Demonte">
+        </a>
+      </div>
+
+      <!-- MENU -->
+      <nav class="nav">
+        {{ range .Site.Menus.main }}
+          <a href="{{ .URL }}"
+            class="{{ if hasPrefix $.RelPermalink .URL }}active{{ end }}">
+            {{ .Name }}
+          </a>
+        {{ end }}
+      </nav>
+
+    </div>
+  </div>
+
 </header>

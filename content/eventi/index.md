@@ -1,6 +1,7 @@
 ---
 title: "Eventi"
 draft: false
+pageClass: "eventi-page"
 ---
 
 ## 🎉 Eventi e ricevimenti
