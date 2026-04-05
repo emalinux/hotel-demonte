@@ -1,26 +1,41 @@
 <section class="intro">
 
-    <div class="container intro-grid">
-  
-      <div class="intro-text">
+  <div class="container intro-grid">
+
+    <div class="intro-text">
+
+      {{ if eq .Site.Language.Lang "en" }}
+        <h2>A simple, authentic stay — just like us.</h2>
+
+        <p>
+          In the heart of Valle Stura, Hotel Moderno welcomes its guests
+          with a warm, family atmosphere, genuine cuisine and carefully curated spaces.
+        </p>
+
+        <p>
+          The perfect starting point to explore the mountains,
+          relax and truly feel at home.
+        </p>
+      {{ else }}
         <h2>Un soggiorno semplice, autentico, come noi.</h2>
-  
+
         <p>
           Nel cuore della Valle Stura, l’Hotel Moderno accoglie i suoi ospiti
           con un’atmosfera familiare, cucina genuina e ambienti curati.
         </p>
-  
+
         <p>
           Un punto di partenza ideale per scoprire la montagna,
           rilassarsi e sentirsi davvero a casa.
         </p>
-  
-      </div>
-  
-      <div class="intro-image">
-        <img src="/img/camere/5.webp" alt="Camera accogliente Hotel Demonte">
-      </div>
-  
+      {{ end }}
+
     </div>
-  
-  </section>
+
+    <div class="intro-image">
+      <img src="/img/camere/5.webp" alt="Camera accogliente Hotel Demonte">
+    </div>
+
+  </div>
+
+</section>

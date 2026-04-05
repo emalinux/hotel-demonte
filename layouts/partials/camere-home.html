@@ -1,47 +1,64 @@
 <section class="camere">
 
-    <div class="container">
-    
+  <div class="container">
+
     <h2 class="section-title">
-       <span>🛏️</span> Le nostre camere
+      <span>🛏️</span>
+      {{ if eq .Site.Language.Lang "en" }}
+        Our rooms
+      {{ else }}
+        Le nostre camere
+      {{ end }}
     </h2>
-    
+
     <div class="camere-grid">
-    
-    <div class="camera-card">
-    
-    <img src="/img/camere/2.webp" alt="Camera singola">
-    
-    <h3>Camera Singola</h3>
-    
-    <p>Ideale per soggiorni brevi e viaggiatori singoli.</p>
-    
+
+      <div class="camera-card">
+        <img src="/img/camere/2.webp" alt="Camera singola">
+
+        {{ if eq .Site.Language.Lang "en" }}
+          <h3>Single Room</h3>
+          <p>Ideal for solo travelers and short stays.</p>
+        {{ else }}
+          <h3>Camera Singola</h3>
+          <p>Ideale per soggiorni brevi e viaggiatori singoli.</p>
+        {{ end }}
+      </div>
+
+      <div class="camera-card">
+        <img src="/img/camere/3.webp" alt="Camera doppia">
+
+        {{ if eq .Site.Language.Lang "en" }}
+          <h3>Double Room</h3>
+          <p>Perfect for couples seeking relaxation in the mountains.</p>
+        {{ else }}
+          <h3>Camera Doppia</h3>
+          <p>Perfetta per coppie o soggiorni rilassanti in montagna.</p>
+        {{ end }}
+      </div>
+
+      <div class="camera-card">
+        <img src="/img/camere/4.webp" alt="Camera familiare">
+
+        {{ if eq .Site.Language.Lang "en" }}
+          <h3>Family Room</h3>
+          <p>Space and comfort for families and small groups.</p>
+        {{ else }}
+          <h3>Camera Familiare</h3>
+          <p>Spazio e comfort per famiglie e gruppi.</p>
+        {{ end }}
+      </div>
+
     </div>
-    
-    <div class="camera-card">
-    
-    <img src="/img/camere/3.webp" alt="Camera doppia">
-    
-    <h3>Camera Doppia</h3>
-    
-    <p>Perfetta per coppie o soggiorni rilassanti in montagna.</p>
-    
-    </div>
-    
-    <div class="camera-card">
-    
-    <img src="/img/camere/4.webp" alt="Camera familiare">
-    
-    <h3>Camera Familiare</h3>
-    
-    <p>Spazio e comfort per famiglie e gruppi.</p>
-    
-    </div>
-    
-    </div>
-    
-    <a href="/camere/" class="btn">Scopri tutte le camere</a>
-    
-    </div>
-    
-    </section>
+
+    <a href="{{ if eq .Site.Language.Lang "en" }}/en/rooms/{{ else }}/camere/{{ end }}" class="btn">
+      {{ if eq .Site.Language.Lang "en" }}
+        Discover all rooms
+      {{ else }}
+        Scopri tutte le camere
+      {{ end }}
+    </a>
+
+  </div>
+
+</section>

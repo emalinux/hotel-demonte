@@ -1,34 +1,55 @@
 <section class="ristorante">
 
-    <div class="container ristorante-layout">
-    
+  <div class="container ristorante-layout">
+
     <div class="ristorante-text">
-    
-    <h2>🍽️  Il ristorante</h2>
-    
-    <p>
-    La cucina dell’Hotel Moderno è uno dei punti di forza
-    della struttura, con piatti della tradizione piemontese
-    preparati con ingredienti locali e passione.
-    </p>
-    
-    <p>
-    Un ambiente accogliente dove gustare sapori autentici
-    dopo una giornata tra le montagne della Valle Stura.
-    </p>
-    
-    <a href="/ristorante/" class="btn">
-    Scopri il ristorante
-    </a>
-    
+
+      {{ if eq .Site.Language.Lang "en" }}
+
+        <h2>🍽️ The restaurant</h2>
+
+        <p>
+          The cuisine at Hotel Moderno is one of the highlights
+          of the property, featuring traditional Piedmont dishes
+          prepared with local ingredients and passion.
+        </p>
+
+        <p>
+          A warm and welcoming space where you can enjoy authentic flavors
+          after a day in the mountains of the Stura Valley.
+        </p>
+
+        <a href="/en/restaurant/" class="btn">
+          Discover the restaurant
+        </a>
+
+      {{ else }}
+
+        <h2>🍽️ Il ristorante</h2>
+
+        <p>
+          La cucina dell’Hotel Moderno è uno dei punti di forza
+          della struttura, con piatti della tradizione piemontese
+          preparati con ingredienti locali e passione.
+        </p>
+
+        <p>
+          Un ambiente accogliente dove gustare sapori autentici
+          dopo una giornata tra le montagne della Valle Stura.
+        </p>
+
+        <a href="/ristorante/" class="btn">
+          Scopri il ristorante
+        </a>
+
+      {{ end }}
+
     </div>
-    
+
     <div class="ristorante-image">
-    
-    <img src="/img/ristorante/sala.webp" alt="Ristorante Hotel Demonte">
-    
+      <img src="/img/ristorante/sala.webp" alt="Ristorante Hotel Demonte">
     </div>
-    
-    </div>
-    
-    </section>
+
+  </div>
+
+</section>

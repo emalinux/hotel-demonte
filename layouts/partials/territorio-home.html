@@ -1,25 +1,51 @@
 <section class="valle">
 
-    <div class="container valle-grid">
-  
-      <div class="valle-text">
-        <h2>🌄  Scopri la Valle Stura</h2>
-  
+  <div class="container valle-grid">
+
+    <div class="valle-text">
+
+      {{ if eq .Site.Language.Lang "en" }}
+
+        <h2>🌄 Discover the Stura Valley</h2>
+
+        <p>
+          Mountains, nature and silence.  
+          An authentic territory of breathtaking landscapes and scenic routes,
+          where you can relax and rediscover the pleasure of simple things.
+        </p>
+
+        <p>
+          The Stura Valley is the ideal destination for those seeking tranquility,
+          fresh air and unspoiled nature.
+        </p>
+
+        <a href="/en/valley/" class="btn">Explore the valley</a>
+
+      {{ else }}
+
+        <h2>🌄 Scopri la Valle Stura</h2>
+
         <p>
           Montagne, natura e silenzio.  
-          Un territorio autentico da vivere in ogni stagione.
-          WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 65 m
+          Un territorio autentico, tra paesaggi mozzafiato e itinerari suggestivi,
+          dove rilassarsi e riscoprire il piacere delle cose semplici.
         </p>
-  
+
+        <p>
+          La Valle Stura è il luogo ideale per chi cerca tranquillità,
+          aria pulita e paesaggi incontaminati.
+        </p>
+
         <a href="/valle-stura/" class="btn">Esplora la valle</a>
-      </div>
-  
-      <div class="valle-image">
-        <img src="/img/territorio/1.webp" alt="Valle Stura">
-      </div>
-  
+
+      {{ end }}
+
     </div>
-  
-  </section>
+
+    <div class="valle-image">
+      <img src="/img/territorio/1.webp" alt="Valle Stura">
+    </div>
+
+  </div>
+
+</section>

@@ -1,19 +1,37 @@
 <section class="cta">
 
-    <div class="container cta-content">
-  
+  <div class="container cta-content">
+
+    {{ if eq .Site.Language.Lang "en" }}
+
+      <h2>Book your stay in Demonte</h2>
+
+      <p>
+        Contact us directly for availability and reservations.  
+        We will be happy to welcome you.
+      </p>
+
+      <div class="cta-buttons">
+        <a href="tel:+393382464353" class="btn-primary">📞 Call now</a>
+        <a href="/en/contacts/" class="btn-secondary">Request information</a>
+      </div>
+
+    {{ else }}
+
       <h2>Prenota il tuo soggiorno a Demonte</h2>
-  
+
       <p>
         Contattaci direttamente per disponibilità e prenotazioni.  
         Saremo felici di accoglierti.
       </p>
-  
+
       <div class="cta-buttons">
         <a href="tel:+393382464353" class="btn-primary">📞 Chiama ora</a>
         <a href="/contatti/" class="btn-secondary">Richiedi informazioni</a>
       </div>
-  
-    </div>
-  
-  </section>
+
+    {{ end }}
+
+  </div>
+
+</section>

@@ -1,25 +1,47 @@
 <section class="hero">
 
-<div class="hero-content">
+  <div class="hero-content">
 
-<h1>Hotel Moderno Demonte</h1>
+    <h1>Hotel Moderno Demonte</h1>
 
-<p>
-Ospitalità, cucina e relax nel cuore della Valle Stura
-</p>
+    {{ if eq .Site.Language.Lang "en" }}
 
-<div class="hero-buttons">
+      <p>
+        Hospitality, cuisine and relaxation in the heart of the Stura Valley
+      </p>
 
-<a class="btn-primary" href="tel:+393382464353">
-📞 Chiama ora
-</a>
+      <div class="hero-buttons">
 
-<a class="btn-secondary" href="/contatti/">
-📅 Richiedi disponibilità
-</a>
+        <a class="btn-primary" href="tel:+393382464353">
+          📞 Call now
+        </a>
 
-</div>
+        <a class="btn-secondary" href="/en/contacts/">
+          📅 Check availability
+        </a>
 
-</div>
+      </div>
+
+    {{ else }}
+
+      <p>
+        Ospitalità, cucina e relax nel cuore della Valle Stura
+      </p>
+
+      <div class="hero-buttons">
+
+        <a class="btn-primary" href="tel:+393382464353">
+          📞 Chiama ora
+        </a>
+
+        <a class="btn-secondary" href="/contatti/">
+          📅 Richiedi disponibilità
+        </a>
+
+      </div>
+
+    {{ end }}
+
+  </div>
 
 </section>
