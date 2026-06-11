@@ -14,3 +14,7 @@ btn.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+
+function toggleMenu() {
+  document.querySelector('.nav').classList.toggle('active');
+}

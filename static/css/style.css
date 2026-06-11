@@ -110,7 +110,7 @@ a:hover:not(.btn) {
 
 /* BANDIERE */
 .lang-switch a {
-  font-size: 2.1rem;
+  font-size: 40px;
   text-decoration: none;
   opacity: 0.7;
 }
@@ -1288,4 +1288,174 @@ hr{
 
 .not-flex {
   display: grid !important;
+}
+
+/* HAMBURGER NASCOSTO SU DESKTOP */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .header-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    max-width: 140px;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .header-cta {
+    margin-top: 10px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .lang-switch {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 0 15px;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .topbar-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+  }
+
+  .top-center {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .top-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .lang-switch {
+    display: flex;
+    gap: 10px;
+  }
+
+  .topbar {
+    overflow-x: hidden;
+  }
+
+  .top-cta {
+    width: 100%;
+    text-align: center;
+    max-width: 220px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .header-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .logo img {
+    max-width: 140px;
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
 }
