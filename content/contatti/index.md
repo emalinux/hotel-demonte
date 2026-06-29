@@ -22,7 +22,7 @@ Largo Mistral 7
 12014 - Demonte (CN)
 
 ### 📞 Telefono
-<a href="tel:+393382464353">+39 338 246 4353</a>
+<a href="tel:+393382464353">+39 338 26 64 617</a>
 
 ### ✉️ Email
 <a href="mailto:info@hoteldemonte.com">info@hoteldemonte.com</a>
